@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Shift Planning Tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>Portfolio</strong> <span>Dzianis Zmushka</span></a>
+
+				</header>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Shift Planning Tool</h1>
+									</header>
+									<table style='text-align:center; vertical-align:middle'>
+										<tr><th style='text-align:center; vertical-align:middle'>Project Name</th><th style='text-align:center; vertical-align:middle'>BI Platform</th><th style='text-align:center; vertical-align:middle'>Country</th><th style='text-align:center; vertical-align:middle'>Industry</th><th style='text-align:center; vertical-align:middle'>Department</th><th style='text-align:center; vertical-align:middle'>Duration</th></tr> <!--ряд с ячейками заголовков-->
+										<tr><td>Shift Planning Tool</td><td><img src="images/excel.png" alt=""/><br>Excel</td><td><img src="images/ltu.png" alt=""/><br>Lithuania</td><td><img src="images/logistic.png" alt=""/><br>Logistics</td><td><img src="images/hr.png" alt=""/><br>HR Department</td><td>6 months</td></tr>
+									</table>
+									<span class="image main"><img src="images/hr_excel_0.png" alt="" /></span>
+									<p>The main customer requirement was to create an Excel-based timesheet product that generates planning sheets based on data extracted from SAP SuccessFactors (HCM), with the ability to retract data (change data in the system). This product was developed for the human resources department of a logistics company. Data extraction was performed using PowerQuery, which was connected to the data in SAP via REST API, after which data transformation and processing was also performed in PowerQuery. Finally, planning sheets were built using VBA based on the extracted data.</p>
+									<span class="image main"><img src="images/hr_excel_1.png" alt="" /></span>
+									<p>The main menu was developed as the basis of the product, which included five VBA macros. The first macro was responsible for collecting parameters entered by the user. The second macro triggered data extraction from SAP SuccessFactors based on the customized parameters. When the third macro was run, planning sheets were generated. After user input, a fourth macro was run to retract the data to SAP. The fifth macro was used to check the data entered by the user in accordance with the customized business rules.</p>
+									<span class="image main"><img src="images/hr_excel_2.png" alt="" /></span>
+									<p>To support the product by the user, an options page has been added to allow the user to customize the planning sheets.</p>
+									<span class="image main"><img src="images/hr_excel_3.png" alt="" /></span>
+									<p>To monitor employees by the manager, a page was developed where it was possible to see if each employee had completed the planning sheets.</p>
+									<span class="image main"><img src="images/hr_excel_4.png" alt="" /></span>
+									<p>For ease of filling data into the planning sheets, a page with a table of daily models was created so that the user could specify any name for each item.</p>
+									<span class="image main"><img src="images/hr_excel_5.png" alt="" /></span>
+									<p>On the technical side, about 20 SAP entities were used to create the model at the PowerQuery level. The number of reports depended on the time period parameters entered by the user (one report for each month), as well as additional pages for parameter entry and employee control.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+
+						<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-envelope"></span>
+								<h3>Email</h3>
+								<a href="mailto:dzianis.zmushka@leverx-group.com">dzianis.zmushka@gmail.com</a>
+							</div>
+						</section>
+							
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>+370 (619) 63429</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span>Giedraičių street 60A<br />
+									Vilnius, LT-08212<br />
+									Lithuania</span>
+								</div>
+							</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/profile.php?id=100081033130166" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://t.me/dzianiszmushka" target="_blank" class="icon brands alt fa-telegram-plane"><span class="label">Telegram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/dzianis-zmushka-81173a18a/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2023</li><li>Design: <a href="https://www.linkedin.com/in/dzianis-zmushka-81173a18a/" target="_blank">Dzianis Zmushka</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
