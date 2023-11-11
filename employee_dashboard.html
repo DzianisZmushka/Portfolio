@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Supply reporting</title>
+		<title>Employee Dashboard</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,30 +27,34 @@
 
 
 				<!-- Main -->
-					<div id="main" class="alt">
+				<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>Supply Reporting</h1>
-									</header>
-									<table style='text-align:center; vertical-align:middle'>
-										<tr><th style='text-align:center; vertical-align:middle'>Project Name</th><th style='text-align:center; vertical-align:middle'>BI Platform</th><th style='text-align:center; vertical-align:middle'>Country</th><th style='text-align:center; vertical-align:middle'>Industry</th><th style='text-align:center; vertical-align:middle'>Department</th><th style='text-align:center; vertical-align:middle'>Duration</th></tr> <!--ряд с ячейками заголовков-->
-										<tr><td>Supply Reporting</td><td><img src="images/pbi.png" alt=""/><br>Power BI</td><td><img src="images/kaz.png" alt=""/><br>Kazakhstan</td><td><img src="images/steel.png" alt=""/><br>Steel Production</td><td><img src="images/purchase.png" alt=""/><br>Purchasing Department</td><td>13 months</td></tr>
-									</table>
-									<span class="image main"><img src="images/purch_report.png" alt="" /></span>
-									<p>The goal of the project is to supplement the implemented product with new indicators (the share of electronic document management, receivables and payables, material requirement planning and the share of SRM). The previous indicators were implemented by another contractor according to the architecture reflected above, respectively, all new indicators had to be implemented in Analysis Services, complementing the existing cube (in Power BI, when live connected to Analysis Services, you cannot use other multidimensional models at the same time).</p>
-									<span class="image main"><img src="images/purch_report_2.png" alt="" /></span>
-									<p>The source systems were SAP and SQL databases. Data from SAP systems were extracted through SAP Business Warehouse (BW) sub-staging database, because it is easier to extract data to SQL from BW than, for example, from ERP, MDG, SRM, and from these systems it is not difficult to extract data into the BW.</p>
-									<span class="image main"><img src="images/purch_report_3.png" alt="" /></span>
-									<p>Additional requirements for the product were drill up/down/through, filter by the required attributes, open SAP documents and other weblinks through Power BI, show dynamical tooltips and other details.</p>
-									<span class="image main"><img src="images/purch_report_4.png" alt="" /></span>
-									<p>About 40 dimensions and 60 measures were used in the process of implementing these indicators.</p>
+					<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1>Employee Dashboard</h1>
+								</header>
+								<table style='text-align:center; vertical-align:middle'>
+									<tr><th style='text-align:center; vertical-align:middle'>Project Name</th><th style='text-align:center; vertical-align:middle'>BI Platform</th><th style='text-align:center; vertical-align:middle'>Country</th><th style='text-align:center; vertical-align:middle'>Industry</th><th style='text-align:center; vertical-align:middle'>Department</th><th style='text-align:center; vertical-align:middle'>Duration</th></tr> <!--ряд с ячейками заголовков-->
+									<tr><td>Employee Dashboard</td><td><img src="images/pbi.png" alt=""/><br>Power BI</t<d><td><img src="images/jpn.png" alt=""/><br>Japan</td><td><img src="images/manufact.png" alt=""/><br>Manufacturing</td><td><img src="images/sale.png" alt=""/><br>Sales Department</td><td>3 months</td></tr>
+								</table>
+								<span class="image main"><img src="images/empl_dash.png" alt="" /></span>
+								<p>The main requirement of the customer was to build a dashboard with reports on employee activity for the sales department. The data source was SQL tables, Oracle database and API interfaces. Based on this data, a tabular model was built inside a PBIX file.</p>
+								<span class="image main"><img src="images/empl_dash2.png" alt="" /></span>
+								<p>The dashboard consists of two pages: employee performance analysis and zone analytics (Employee level and Zone level).</p>
+								<span class="image main"><img src="images/empl_dash3.png" alt="" /></span>
+								<p>All dashboard pages are adjusted by time-based filters and their main dashboards consist mainly of business cards and charts that reflect analytics on all KPIs.</p>
+								<span class="image main"><img src="images/empl_dash4.png" alt="" /></span>
+								<p>On the "Employee Level" page, an employee rating system was developed where the user can customize coefficients and parameters to rate one or another employee.</p>
+								<span class="image main"><img src="images/empl_dash5.png" alt="" /></span>
+								<p>A custom calendar visual element was also developed as part of this project. To build it, 37 elements were required, which contain business cards, shapes, and additional measures were built for the correct work of the calendar. Also, conditional formatting of each visual element was customized for the correct work of the calendar.</p>
+								<span class="image main"><img src="images/empl_dash6.png" alt="" /></span>
+								<p>A tabular model consisting of about 8 dimensions and about 50 measures was used to construct the dashboard.</p>
 								</div>
-							</section>
+						</section>
 
-					</div>
+				</div>
 
 				<!-- Contact -->
 				<section id="contact">
